@@ -1,7 +1,5 @@
-const adminprefix = "-";
-const devs = ['389755149939113987'];
-var prefix = '-';
-
+const Discord = require("discord.js");
+const client = new Discord.Client();
 
 
 client.on('ready', () => {
