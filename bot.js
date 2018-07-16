@@ -1196,7 +1196,6 @@ let embed = new Discord.RichEmbed()
     
 });
 
-const giphy = require('giphy-api')();
     function getValue(key, array) {
   for (var el in array) {
     if (array[el].hasOwnProperty(key)) {
@@ -2157,7 +2156,6 @@ if (message.content.startsWith("-cv")) {
 }
 });
 
-const sql = require("sqlite");
 client.on("message", async message => {
     if (message.content.startsWith(prefix + "achieve")) {
          var ids = [
