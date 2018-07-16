@@ -977,9 +977,6 @@ client.on('message', message => {
    
 });
 
-client.on('ready', () => {
- console.log(`im ready`);
-});
 const zead = [
   '*** انا اسمي مريم ***',
   '*** مرحباَ ماهو اسمك ؟ ***',
@@ -2821,7 +2818,6 @@ msg.channel.sendFile(`${item.image}`).then(() => {
 });
 
         client.on('message', eyad => {
-var prefix = "-";
                         let args = eyad.content.split(" ").slice(1).join(" ")
 if(eyad.content.startsWith(prefix + 'cc')) {
     if(!args) return eyad.channel.send('`يرجي اختيار كم لون `');
@@ -2877,7 +2873,6 @@ message.channel.send(
 });
 
 client.on('message' , async (message) => {
-    const ms = require("ms");
     if (message.content.startsWith(prefix + 'time')) {
          let args = message.content.split(" ").slice(1);
 let Timer = args[0];
@@ -2997,12 +2992,6 @@ npm install youtube-info
 npm install simple-youtube-api
 npm install queue
 */
-
-
-const { Client, Util } = require('discord.js');
-const YouTube = require('simple-youtube-api');
-const youtube = new YouTube("AIzaSyAdORXg7UZUo7sePv97JyoDqtQVi3Ll0b8");
-const queue = new Map();
 
 client.on('message', async msg => { // eslint-disable-line
 	if (msg.author.bot) return undefined;
