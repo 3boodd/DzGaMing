@@ -1,3 +1,4 @@
+
 const Discord = require("discord.js");
 const client = new Discord.Client();
 const fs = require("fs");
@@ -22,8 +23,12 @@ let done = {};
 const child_process = require("child_process");
 const adminprefix = "-";
 const devs = ['389755149939113987'];
-const shorten = require('isgd');
 var prefix = '-';
+
+const { Client, Util } = require('discord.js');
+const YouTube = require('simple-youtube-api');
+const youtube = new YouTube("AIzaSyAdORXg7UZUo7sePv97JyoDqtQVi3Ll0b8");
+const queue = new Map();
 
 client.on('ready', () => {
      client.user.setActivity("-help | -inv",{type: 'WATCHING'})
@@ -3013,10 +3018,6 @@ message.guild.channels.get(channels[message.author.id].channel).setName(args.joi
 
 
 
-const { Client, Util } = require('discord.js');
-const YouTube = require('simple-youtube-api');
-const youtube = new YouTube("AIzaSyAdORXg7UZUo7sePv97JyoDqtQVi3Ll0b8");
-const queue = new Map();
 
 /*
 البكجآت
@@ -3027,6 +3028,11 @@ npm install youtube-info
 npm install simple-youtube-api
 npm install queue
 */
+
+const { Client, Util } = require('discord.js');
+const YouTube = require('simple-youtube-api');
+const youtube = new YouTube("AIzaSyAdORXg7UZUo7sePv97JyoDqtQVi3Ll0b8");
+const queue = new Map();
 
 client.on('message', async msg => { // eslint-disable-line
 	if (msg.author.bot) return undefined;
