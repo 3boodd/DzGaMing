@@ -25,10 +25,6 @@ const adminprefix = "-";
 const devs = ['389755149939113987'];
 var prefix = '-';
 
-const { Client, Util } = require('discord.js');
-const YouTube = require('simple-youtube-api');
-const youtube = new YouTube("AIzaSyAdORXg7UZUo7sePv97JyoDqtQVi3Ll0b8");
-const queue = new Map();
 
 client.on('ready', () => {
      client.user.setActivity("-help | -inv",{type: 'WATCHING'})
@@ -3025,6 +3021,7 @@ npm install youtube-info
 npm install simple-youtube-api
 npm install queue
 */
+
 
 const { Client, Util } = require('discord.js');
 const YouTube = require('simple-youtube-api');
