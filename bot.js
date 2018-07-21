@@ -33,7 +33,7 @@ client.on("message", message => {
    :sleuth_or_spy::skin-tone-1: اوامر الأداره :sleuth_or_spy::skin-tone-1:
    ============
    -cr-colors | لعمل 50 لون
-   
+    
    -del-colors | لإلغاء 50 لون
    
    -role bots < لإعطاء البوتات الرتبه اللي تبيها | < أسم الرتبه
